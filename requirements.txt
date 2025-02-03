@@ -1,0 +1,11 @@
+scrapy
+playwright
+pandas
+beautifulsoup4
+fake_useragent
+transformers
+spacy
+sqlalchemy
+dash
+dash-bootstrap-components
+plotly

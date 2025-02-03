@@ -1,0 +1,26 @@
+{
+  "amazon": {
+    "base_url": "https://www.amazon.com/s?k={query}",
+    "selectors": {
+      "product": ".s-main-slot .s-result-item",
+      "name": "h2.a-size-mini.a-spacing-none.a-color-base.a-text-normal::text",
+      "price": ".a-price > .a-offscreen::text",
+      "rating": ".a-icon-alt::text",
+      "url": "h2 > a.a-link-normal::attr(href)"
+    },
+    "pagination": ".s-pagination-next::attr(href)"
+  },
+    "walmart": {
+      "base_url": "https://www.walmart.com/search?q={query}",
+      "selectors": {
+        "product": "div.search-result-gridview-item",
+        "name": "span::text",
+        "price": "span.price-characteristic::attr(content)",
+        "rating": "span.stars-container::attr(aria-label)",
+        "url": "a.product-title-link::attr(href)"
+      },
+      "pagination": "a[aria-label='Next Page']::attr(href)",
+      "dynamic": false
+    }
+  }
+  
